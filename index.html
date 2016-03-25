@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="votesApp">
+  <head>
+    <title>Voter app</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/styles/index.css">
+  </head>
+  <body>
+    <main>
+      <div ui-view></div>
+    </main>
+    <footer></footer>
+
+    <!-- Dependencies -->
+    <script src="public/app/socket.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/angular-cookies/angular-cookies.js"></script>
+    <script src="public/dependencies/angular-socket-io/socket.min.js"></script>
+
+    <!-- App scripts -->
+    <script src="public/app/app.js"></script>
+    <script src="public/app/app.routes.js"></script>
+    <!-- Services Module -->
+    <script src="public/app/services/services.module.js"></script>
+    <script src="public/app/services/socket.service.js"></script>
+    <!-- Votes Module -->
+    <script src="public/app/votes/votes.module.js"></script>
+    <script src="public/app/votes/votes.controller.js"></script>
+
+    <script>
+    </script>
+  </body>
+</html>
